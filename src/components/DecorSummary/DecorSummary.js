@@ -1,0 +1,24 @@
+import classes from "./DecorSummary.module.css";
+
+const DecorSummary = () => {
+  return (
+    <section className={classes.summary}>
+      <h2>Plant Decor & Monitoring</h2>
+      <h3>Did you know?</h3>
+      <p>
+        The history of houseplants is intertwined with the history of container
+        gardening in general. Ancient Egyptians and Sumerians grew ornamental
+        and fruiting plants in decorative containers. Ancient Greeks and the
+        Romans cultivated laurel trees in earthenware vessels. In ancient China,
+        potted plants were shown at garden exhibitions over 2,500 years ago. In
+        the medieval era, gillyflowers were displayed in containers
+      </p>
+      <p>
+        “My green thumb came only as a result of the mistakes I made while
+        learning to see things from the plant’s point of view.” — H. Fred Dale
+      </p>
+    </section>
+  );
+};
+
+export default DecorSummary;
