@@ -9,10 +9,10 @@ function App() {
     <div>
       <Header/>
       <Routes>
+        <Route path='/' element={<DecorSummary/>}/>
         <Route path='/main' element={<Main/>}/>
       </Routes>
       <Apitest/>
-      <DecorSummary/>
     </div>
   );
 }

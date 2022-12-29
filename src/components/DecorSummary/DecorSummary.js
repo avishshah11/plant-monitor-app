@@ -1,7 +1,13 @@
 import classes from "./DecorSummary.module.css";
+import background from "../../assets/background.jpg";
+import { Fragment } from "react";
 
 const DecorSummary = () => {
   return (
+    <Fragment>
+      <div className={classes["main-image"]}>
+        <img src={background} alt="A plant decor" />
+      </div>
     <section className={classes.summary}>
       <h2>Plant Decor & Monitoring</h2>
       <h3>Did you know?</h3>
@@ -18,6 +24,7 @@ const DecorSummary = () => {
         learning to see things from the plant’s point of view.” — H. Fred Dale
       </p>
     </section>
+    </Fragment>
   );
 };
 
