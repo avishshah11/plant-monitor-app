@@ -1,9 +1,7 @@
+import Decor from "../components/Decor/Decor";
+
 const Main = () => {
-    return (
-        <h1>
-            New Page
-        </h1>
-    )
+    return <Decor/>
 };
 
 export default Main;
