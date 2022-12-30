@@ -1,0 +1,37 @@
+.plants {
+  margin: 5rem;
+  border: 1px solid #ccc;
+  background-color: #383838;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 12px;
+}
+
+.plants h2 {
+  margin-left: 3rem;
+  font-size: 2rem;
+  color: white;
+}
+
+.plants h3 {
+  margin-left: 3rem;
+  color: white;
+  font-style: oblique;
+}
+
+.description {
+  margin-left: 3rem;
+  font-style: italic;
+  color: white;
+}
+
+.button {
+  margin-left: 3rem;
+  font: inherit;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
