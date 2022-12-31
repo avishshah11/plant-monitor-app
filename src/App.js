@@ -6,10 +6,10 @@ import Main from "./Pages/Main";
 function App() {
   return (
     <div>
-      <Header/>
+      <Header />
       <Routes>
-        <Route path='/' element={<DecorSummary/>}/>
-        <Route path='/main' element={<Main/>}/>
+        <Route path="/" element={<DecorSummary />} />
+        <Route path="/main" element={<Main />} />
       </Routes>
     </div>
   );

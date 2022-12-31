@@ -3,7 +3,7 @@ import PlantsList from "../PlantsList/PlantsList";
 import classes from "./Decor.module.css";
 import background from "../../assets/background.jpg";
 
-const Decor = () => {
+const Decor = (props) => {
   const [plants, setPlants] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -48,7 +48,7 @@ const Decor = () => {
   let content = <p className={classes.data}>No data found</p>;
 
   if (plants.length > 0) {
-    content = <PlantsList plants={plants} />;
+    content = <PlantsList plants={plants}/>;
   }
 
   if (loading){
@@ -60,7 +60,7 @@ const Decor = () => {
       <div className={classes["main-image"]}>
         <img src={background} alt="A plant decor" />
       </div>
-      <section className={classes.content}>{content}</section>
+      <section onClick={props.onShowCart} className={classes.content}>{content}</section>
     </Fragment>
   );
 };

@@ -1,7 +1,25 @@
+import { Fragment, useState } from "react";
 import Decor from "../components/Decor/Decor";
+import ModalContent from "../components/PlantsList/ModalContent";
 
 const Main = () => {
-    return <Decor/>
+
+    const [showCart, setShowCart] = useState(false);
+
+    const showCartHandler = () => {
+        setShowCart(true)
+    };
+
+    const hideCartHandler = () => {
+        setShowCart(false);
+    };
+
+    return (
+        <Fragment>
+            <Decor onShowCart={showCartHandler}/>
+            {showCart && <ModalContent/>}
+        </Fragment>
+    )
 };
 
 export default Main;
