@@ -27,11 +27,11 @@ const Decor = (props) => {
       for (const key in data) {
         loadPlants.push({
           id: key,
-          latin: data[key].latin,
+          common: data[key].common,
           watering: data[key].watering,
           category: data[key].category,
-          climate: data[key].climate,
-          insects: data[key].insects,
+          tempmin: data[key].tempmin,
+          tempmax: data[key].tempmax,
         });
         setPlants(loadPlants);
       }
@@ -48,7 +48,7 @@ const Decor = (props) => {
   let content = <p className={classes.data}>No data found</p>;
 
   if (plants.length > 0) {
-    content = <PlantsList plants={plants}/>;
+    content = <PlantsList onClick={props.onShowCart} plants={plants}/>;
   }
 
   if (loading){
@@ -60,7 +60,7 @@ const Decor = (props) => {
       <div className={classes["main-image"]}>
         <img src={background} alt="A plant decor" />
       </div>
-      <section onClick={props.onShowCart} className={classes.content}>{content}</section>
+      <section className={classes.content}>{content}</section>
     </Fragment>
   );
 };

@@ -1,6 +1,7 @@
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import Decor from "../components/Decor/Decor";
 import ModalContent from "../components/PlantsList/ModalContent";
+import PlantProvider from "../store/PlantProvider";
 
 const Main = () => {
 
@@ -15,10 +16,10 @@ const Main = () => {
     };
 
     return (
-        <Fragment>
+        <PlantProvider>
             <Decor onShowCart={showCartHandler}/>
             {showCart && <ModalContent onClose={hideCartHandler}/>}
-        </Fragment>
+        </PlantProvider>
     )
 };
 
