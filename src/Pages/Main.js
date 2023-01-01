@@ -17,7 +17,7 @@ const Main = () => {
     return (
         <Fragment>
             <Decor onShowCart={showCartHandler}/>
-            {showCart && <ModalContent/>}
+            {showCart && <ModalContent onClose={hideCartHandler}/>}
         </Fragment>
     )
 };
