@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { Fragment, useRef, useState } from "react";
 import Modal from "../Layout/Modal";
 import classes from "./ModalContent.module.css";
 
@@ -7,7 +7,8 @@ const isQuantity = (value) => value >= 1 && value <= 5;
 const isFiveChars = (value) => value.trim().length === 5;
 
 const ModalContent = (props) => {
-  const [didSubmit, setDidSubmit] = useState();
+  const [didSubmit, setDidSubmit] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formInputsValidity, setFormInputsValidity] = useState({
     name: true,
     quantity: true,
@@ -46,11 +47,26 @@ const ModalContent = (props) => {
       enteredStreetIsValid &&
       enteredPostalIsValid;
 
+    const userData = {
+      name: enteredName,
+      quantity: enteredQuantity,
+      street: enteredStreet,
+      postalCode: enteredPostal,
+    };
+
     if (!formIsValid) {
       return;
+    } else {
+      setIsSubmitting(true);
+      fetch("https://food-app-f6f0e-default-rtdb.firebaseio.com/user.json", {
+        method: "POST",
+        body: JSON.stringify({
+          user: userData,
+        }),
+      });
+      setIsSubmitting(false);
+      setDidSubmit(true);
     }
-
-    setDidSubmit(true);
   };
 
   const nameControlClasses = `${classes.control} ${
@@ -69,10 +85,8 @@ const ModalContent = (props) => {
     formInputsValidity.postalCode ? "" : classes.invalid
   }`;
 
-  const submitted = <p>Order Sent</p>;
-
-  return (
-    <Modal onClose={props.onClose}>
+  const plantModalContent = (
+    <Fragment>
       <form className={classes.form}>
         <div className={nameControlClasses}>
           <label htmlFor="name">Your Name</label>
@@ -107,7 +121,18 @@ const ModalContent = (props) => {
           </button>
         </div>
       </form>
-      {didSubmit && submitted}
+    </Fragment>
+  );
+
+  const isSubmittingModalContent = <p>Sending order data...</p>;
+
+  const didSubmitModalContent = <p>Order Sent</p>;
+
+  return (
+    <Modal onClose={props.onClose}>
+      {!isSubmitting && !didSubmit && plantModalContent}
+      {isSubmitting && isSubmittingModalContent}
+      {!isSubmitting && didSubmit && didSubmitModalContent}
     </Modal>
   );
 };
