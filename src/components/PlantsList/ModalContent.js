@@ -4,13 +4,25 @@ import classes from "./ModalContent.module.css";
 
 const ModalContent = (props) => {
     const [didSubmit, setDidSubmit] = useState();
-    const nameInputRef = useRef()
+    const nameInputRef = useRef();
+    const quantityInputRef = useRef();
+    const streetInputRef = useRef();
+    const postalInputRef = useRef();
     
     const orderHandler = (event) => {
         event.preventDefault();
 
         const enteredName = nameInputRef.current.value;
-        console.log(enteredName)
+        const enteredQuantity = quantityInputRef.current.value;
+        const enteredStreet = streetInputRef.current.value;
+        const enteredPostal = postalInputRef.current.value;
+
+        console.log(
+          enteredName,
+          enteredQuantity,
+          enteredStreet,
+          enteredPostal);
+
         setDidSubmit(true)
     }
 
@@ -18,18 +30,22 @@ const ModalContent = (props) => {
 
   return (
     <Modal onClose={props.onClose} >
-      <form>
-        <div>
+      <form className={classes.form}>
+        <div className={classes.control}>
           <label htmlFor="name">Your Name</label>
           <input type="text" id="name" ref={nameInputRef}/>
         </div>
-        <div>
-          <label htmlFor="street">Your Street</label>
-          <input type="text" id="street" />
+        <div className={classes.control}>
+          <label htmlFor="quantity">Quantity</label>
+          <input type="text" id="quantity" ref={postalInputRef}/>
         </div>
-        <div>
+        <div className={classes.control}>
+          <label htmlFor="street">Your Street</label>
+          <input type="text" id="street" ref={streetInputRef}/>
+        </div>
+        <div className={classes.control}>
           <label htmlFor="postal">Postal Code</label>
-          <input type="text" id="postal" />
+          <input type="text" id="postal" ref={postalInputRef}/>
         </div>
         <div className={classes.actions}>
           <button className={classes["button--alt"]} onClick={props.onClose}>
