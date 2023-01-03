@@ -42,6 +42,7 @@ const Decor = (props) => {
   }, []);
 
   useEffect(() => {
+    console.log("Testing")
     fetchCrop();
   }, [fetchCrop]);
 

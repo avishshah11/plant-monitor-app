@@ -10,10 +10,10 @@ const Plants = (props) => {
           <h3>
             {props.tempmin}, {props.tempmax}
           </h3>
-          <h3>20$</h3>
+          <h3>$20</h3>
           <p className={classes.description}>{props.watering}</p>
           <button onClick={props.onClick} className={classes.button}>
-            +Add
+            Buy
           </button>
         </li>
     </Fragment>

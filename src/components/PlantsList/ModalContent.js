@@ -88,6 +88,7 @@ const ModalContent = (props) => {
   const plantModalContent = (
     <Fragment>
       <form className={classes.form}>
+        <h1 className={classes.h1}>Shipping details</h1>
         <div className={nameControlClasses}>
           <label htmlFor="name">Your Name</label>
           <input type="text" id="name" ref={nameInputRef} />
