@@ -2,8 +2,8 @@
   margin: 5rem;
   border: 1px solid #ccc;
   background-color: #383838;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   border-radius: 12px;
+  transition: all 0.4s ease-out;
 }
 
 .plants h2 {

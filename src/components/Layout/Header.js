@@ -15,14 +15,14 @@ const Header = () => {
               </Link>
             </li>
             <li>
-                <Link className={classes.active} to="/team">
+              <Link className={classes.active} to="/team">
                 Team
-                </Link>
+              </Link>
             </li>
             <li>
-                <Link className={classes.active} to="/contact">
+              <Link className={classes.active} to="/contact">
                 Contact
-                </Link>
+              </Link>
             </li>
           </ul>
         </nav>
