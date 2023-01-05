@@ -4,18 +4,19 @@ import { Fragment } from "react";
 const Plants = (props) => {
   return (
     <Fragment>
-        <li className={classes.plants}>
-          <h2>{props.common}</h2>
-          <h3>{props.category}</h3>
-          <h3>
-            {props.tempmin}, {props.tempmax}
-          </h3>
-          <h3>$20</h3>
-          <p className={classes.description}>{props.watering}</p>
-          <button onClick={props.onClick} className={classes.button}>
-            Buy
-          </button>
-        </li>
+      <li className={classes.plants}>
+        <img alt="plant img" src={props.img} />
+        <h2>{props.common}</h2>
+        <h3>{props.category}</h3>
+        <h3>
+          {props.tempmin}F, {props.tempmax}F
+        </h3>
+        <h3>$20</h3>
+        <p className={classes.description}>{props.watering}</p>
+        <button onClick={props.onClick} className={classes.button}>
+          Buy
+        </button>
+      </li>
     </Fragment>
   );
 };

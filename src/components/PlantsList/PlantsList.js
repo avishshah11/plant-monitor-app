@@ -9,11 +9,12 @@ const PlantsList = (props) => {
         {props.plants.slice(0, 10).map((plant) => (
           <Plants
             key={plant.id}
+            img={plant.img}
             common={plant.common}
             category={plant.category}
             watering={plant.watering}
-            tempmin={plant.tempmin.fahrenheit}
-            tempmax={plant.tempmax.fahrenheit}
+            tempmin={plant.tempmin.F}
+            tempmax={plant.tempmax.F}
             onClick={props.onClick}
           />
         ))}
