@@ -57,7 +57,7 @@ const Decor = (props) => {
     content = <p className={classes.data}>Loading...</p>;
   }
 
-  return (
+  return (  
     <Fragment>
       <div className={classes["main-image"]}>
         <img src={background} alt="A plant decor" />
