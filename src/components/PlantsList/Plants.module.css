@@ -60,13 +60,20 @@ body {
 .button {
   margin-left: 3rem;
   border: 0;
-	border-radius: 30px;
+  border-radius: 30px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   color: #fff;
-	font-size: 16px;
+  font-size: 16px;
   padding: 12px 25px;
   letter-spacing: 1px;
   cursor: pointer;
   background-color: #2a265f;
   margin-bottom: 1rem;
+}
+
+.button:hover,
+.button:active {
+  background-color: #9790f2;
+  border-color: #383838;
+  color: white;
 }
