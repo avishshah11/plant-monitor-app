@@ -35,10 +35,3 @@
   text-decoration: none;
 }
 
-.header a:hover,
-.header a:active,
-.header a.active {
-  color: white;
-  padding-bottom: 0.25rem;
-  border-bottom: 2px solid white;
-}

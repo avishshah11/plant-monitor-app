@@ -1,0 +1,30 @@
+.title {
+  color: white;
+  text-align: center;
+  padding: 3rem;
+}
+
+.featuresList {
+  color: white;
+  font-size: 2rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.featuresList li {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 14px;
+    background-color: #2a265f;
+    padding: 15px;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.featuresList li:hover,
+.featuresList li:active {
+    background-color: #9790f2;
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+}

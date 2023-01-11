@@ -1,6 +1,7 @@
 import classes from "./DecorSummary.module.css";
 import background from "../../assets/background.jpg";
 import { Fragment } from "react";
+import Features from "../Features/Features";
 
 const DecorSummary = () => {
   return (
@@ -24,6 +25,7 @@ const DecorSummary = () => {
         learning to see things from the plant’s point of view.” — H. Fred Dale
       </p>
     </section>
+    <Features/>
     </Fragment>
   );
 };
