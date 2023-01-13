@@ -6,10 +6,11 @@ const Features = () => {
     <Fragment>
       <h1 className={classes.title}>Features</h1>
       <ul className={classes.featuresList}>
-        <li>Plant name</li>
-        <li>Categories of plant</li>
-        <li>Min and max temp</li>
-        <li>Watering way</li>
+        <li>Name</li>
+        <li>Category</li>
+        <li>Minimum temperature</li>
+        <li>Maximum temperature</li>
+        <li>Watering</li>
       </ul>
     </Fragment>
   );

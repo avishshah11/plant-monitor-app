@@ -2,6 +2,7 @@ import classes from "./DecorSummary.module.css";
 import background from "../../assets/background.jpg";
 import { Fragment } from "react";
 import Features from "../Features/Features";
+import UpcomingFeatures from "../Features/UpcomingFeatures";
 
 const DecorSummary = () => {
   return (
@@ -26,6 +27,7 @@ const DecorSummary = () => {
       </p>
     </section>
     <Features/>
+    <UpcomingFeatures/>
     </Fragment>
   );
 };
