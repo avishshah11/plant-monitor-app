@@ -3,6 +3,7 @@ import background from "../../assets/background.jpg";
 import { Fragment } from "react";
 import Features from "../Features/Features";
 import UpcomingFeatures from "../Features/UpcomingFeatures";
+import Image from "../Image/Image";
 
 const DecorSummary = () => {
   return (
@@ -28,6 +29,7 @@ const DecorSummary = () => {
     </section>
     <Features/>
     <UpcomingFeatures/>
+    <Image/>
     </Fragment>
   );
 };

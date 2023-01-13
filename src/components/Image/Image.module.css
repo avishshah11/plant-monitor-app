@@ -1,0 +1,27 @@
+.title {
+    text-align: center;
+    color: white;
+    padding: 3rem;
+    font-size: 2.3rem;
+}
+
+img {
+    height: 200px;
+    padding-bottom: 5px;
+}
+
+.image_1, .image_4, .image_5, .image_7{
+    width: 27%;
+}
+
+.image_2, .image_3, .image_6, .image_8{
+    width: 23%;
+}
+
+.image_1, .image_3, .image_7, .image_8{
+    float: left;
+}
+
+.image_2, .image_4, .image_6, .image_5{
+    float: right;
+}
