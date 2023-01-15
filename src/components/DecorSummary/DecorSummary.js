@@ -4,6 +4,7 @@ import { Fragment } from "react";
 import Features from "../Features/Features";
 import UpcomingFeatures from "../Features/UpcomingFeatures";
 import Image from "../Image/Image";
+import HomepageBuy from "../HomepageBuy/HomepageBuy";
 
 const DecorSummary = () => {
   return (
@@ -30,6 +31,7 @@ const DecorSummary = () => {
     <Features/>
     <UpcomingFeatures/>
     <Image/>
+    <HomepageBuy/>
     </Fragment>
   );
 };

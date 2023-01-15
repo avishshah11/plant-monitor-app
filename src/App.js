@@ -4,10 +4,12 @@ import { Routes, Route } from "react-router-dom";
 import Main from "./Pages/Main";
 import Team from "./Pages/Team";
 import Footer from "./components/Layout/Footer";
+import FreeShipping from "./components/FreeShipping/FreeShipping";
 
 function App() {
   return (
     <div>
+      <FreeShipping/>
       <Header />
       <Routes>
         <Route path="/" element={<DecorSummary />} />
