@@ -1,20 +1,17 @@
 import { Fragment } from "react";
+import classes from "./HomepageBuy.module.css";
 
 const HomepageBuy = () => {
-    return (
-        <Fragment>
-            <h1>Truncated list</h1>
-            <div>
-                Buy 5 exculsive decor plants @ just 90$ 
-            </div>
-            <div>
-                Buy 8 imported decor plants @ just 150$
-            </div>
-            <div>
-                Buy 3 aesthetic decor plants @ just 50$
-            </div>
-        </Fragment>
-    )
+  return (
+    <Fragment>
+      <h1 className={classes.title_bar}>Specials</h1>
+      <div className={classes.card}>
+        <p>Buy 5 exculsive decor plants<br/> @ just 90$</p>
+        <p>Buy 8 imported decor plants<br/> @ just 150$</p>
+        <p>Buy 3 aesthetic decor plants<br/> @ just 50$</p>
+      </div>
+    </Fragment>
+  );
 };
 
-export default HomepageBuy
+export default HomepageBuy;

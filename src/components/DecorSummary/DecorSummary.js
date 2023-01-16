@@ -5,6 +5,7 @@ import Features from "../Features/Features";
 import UpcomingFeatures from "../Features/UpcomingFeatures";
 import Image from "../Image/Image";
 import HomepageBuy from "../HomepageBuy/HomepageBuy";
+import Bestseller from "../Bestseller/Bestseller";
 
 const DecorSummary = () => {
   return (
@@ -32,6 +33,7 @@ const DecorSummary = () => {
     <UpcomingFeatures/>
     <Image/>
     <HomepageBuy/>
+    <Bestseller/>
     </Fragment>
   );
 };
