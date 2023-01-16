@@ -1,14 +1,30 @@
-import { Fragment } from "react";
+import { Fragment} from "react";
+import classes from "./Bestseller.module.css";
 
-const Bestseller = () => {
-    return (<Fragment>
-        <h1>Best Seller</h1>
-        <div>
-            <img src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-g-plants-money-plant-golden-scindapsus-golden-plant_600x600.jpg?v=1637052538" alt="img_1"/>
-            <img src="https://m.media-amazon.com/images/I/81Bj01dXLXL._SL1500_.jpg" alt="img_2" />
-            <img src="https://ii2.pepperfry.com/media/catalog/product/m/i/494x544/mini-wandering-plant-in-white-ceramic-vase-by-fourwalls-mini-wandering-plant-in-white-ceramic-vase-b-8roekn.jpg" alt="img_3"/>
-        </div>
-    </Fragment>)
+const Bestseller = (props) => {
+  
+  return (
+    <Fragment>
+      <h1 className={classes.head}>Best Seller</h1>
+      <div className={classes.main}>
+        <img
+          src="https://i1.fnp.com/images/pr/l/v20210226154451/english-ivy-plant-in-copper-pot_1.jpg"
+          alt="English ivy"
+          className={classes.img_1}
+        />
+        <img
+          src="https://cdn.worldofflowers.eu/imgproxy/Y2i1zqbOBsv13WDzDPx_Ve1Jeov968h4lS_50OrDYvI/rs:auto:500:500:0:1/g:sm/bg:fff/plain/media/productphotos/5838.jpg"
+          alt="Spineless yucca Palm lily"
+          className={classes.img_2}
+        />
+        <img
+          src="https://m.media-amazon.com/images/I/818s4otZJuL._SL1500_.jpg"
+          alt="Bamboo palmReed Palm"
+          className={classes.img_3}
+        />
+      </div>
+    </Fragment>
+  );
 };
 
 export default Bestseller;
