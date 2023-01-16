@@ -4,11 +4,24 @@ import classes from "./HomepageBuy.module.css";
 const HomepageBuy = () => {
   return (
     <Fragment>
-      <h1 className={classes.title_bar}>Specials</h1>
+      <h1 className={classes.title_bar}>New additions</h1>
       <div className={classes.card}>
-        <p>Buy 5 exculsive decor plants<br/> @ just 90$</p>
-        <p>Buy 8 imported decor plants<br/> @ just 150$</p>
-        <p>Buy 3 aesthetic decor plants<br/> @ just 50$</p>
+        <div>
+        <img
+          src="https://www.gardendesign.com/pictures/images/900x705Max/site_3/chinese-evergreen-plant-aglaonema-shutterstock-com_15962.jpg"
+          alt="Chinese Evergreen"
+          className={classes.img1}
+        />
+            <div className={classes.text}>Chinese Evergreen</div>
+        </div>
+        <div>
+        <img
+          src="https://myfreshair.in/wp-content/uploads/2021/07/dumb-cane-plant-01-1.jpg"
+          alt="Dumb Cane"
+          className={classes.img2}
+        />
+        <div className={classes.text}>Dumb Cane</div>
+        </div>
       </div>
     </Fragment>
   );

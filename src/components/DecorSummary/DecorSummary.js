@@ -1,6 +1,6 @@
 import classes from "./DecorSummary.module.css";
 import background from "../../assets/background.jpg";
-import { Fragment } from "react";
+import { Fragment} from "react";
 import Features from "../Features/Features";
 import UpcomingFeatures from "../Features/UpcomingFeatures";
 import Image from "../Image/Image";
@@ -8,6 +8,7 @@ import HomepageBuy from "../HomepageBuy/HomepageBuy";
 import Bestseller from "../Bestseller/Bestseller";
 
 const DecorSummary = () => {
+
   return (
     <Fragment>
       <div className={classes["main-image"]}>
