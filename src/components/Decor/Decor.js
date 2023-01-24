@@ -10,7 +10,7 @@ const Decor = (props) => {
   const fetchCrop = useCallback(async () => {
     setLoading(true);
     try {
-      const response = await fetch("https://house-plants2.p.rapidapi.com/", {
+      const response = await fetch("https://house-plants2.p.rapidapi.com/all", {
         headers: {
           "X-RapidAPI-Key":
             "1bdf5e5f66msh2b5012dbf63f687p17a786jsn4dc018b4f162",
