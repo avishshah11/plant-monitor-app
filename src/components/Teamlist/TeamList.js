@@ -1,22 +1,10 @@
 import { Fragment } from "react"
+import classes from "./TeamList.module.css";
 
 const TeamList = () => {
     return (
         <Fragment>
-            <ul>
-                <li>
-                    Avish Shah
-                </li>
-                <li>
-                    Shivang Kansal
-                </li>
-                <li>
-                    Priyansh Saxena
-                </li>
-                <li>
-                    Utkarsh Srivastava
-                </li>
-            </ul>
+            <p className={classes.progress}>In progress</p>
         </Fragment>
     )
 };

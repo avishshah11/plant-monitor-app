@@ -4,7 +4,7 @@ import classes from "./ModalContent.module.css";
 
 const isEmpty = (value) => value.trim() === "";
 const isQuantity = (value) => value >= 1 && value <= 5;
-const isFiveChars = (value) => value.trim().length === 5;
+const isSixChars = (value) => value.trim().length === 6;
 
 const ModalContent = (props) => {
   const [didSubmit, setDidSubmit] = useState(false);
@@ -32,7 +32,7 @@ const ModalContent = (props) => {
     const enteredNameIsValid = !isEmpty(enteredName);
     const enteredQuantityIsValid = isQuantity(enteredQuantity);
     const enteredStreetIsValid = !isEmpty(enteredStreet);
-    const enteredPostalIsValid = isFiveChars(enteredPostal);
+    const enteredPostalIsValid = isSixChars(enteredPostal);
 
     setFormInputsValidity({
       name: enteredNameIsValid,
@@ -58,7 +58,7 @@ const ModalContent = (props) => {
       return;
     } else {
       setIsSubmitting(true);
-      fetch("https://food-app-f6f0e-default-rtdb.firebaseio.com/user.json", {
+      fetch("https://plant-decor-default-rtdb.firebaseio.com/user.json", {
         method: "POST",
         body: JSON.stringify({
           user: userData,
@@ -111,7 +111,7 @@ const ModalContent = (props) => {
           <label htmlFor="postal">Postal Code</label>
           <input type="text" id="postal" ref={postalInputRef} />
           {!formInputsValidity.postalCode && (
-            <p>Please enter a valid postal code (5 characters)!</p>
+            <p>Please enter a valid postal code (6 characters)!</p>
           )}
         </div>
         <div className={classes.actions}>
@@ -128,7 +128,7 @@ const ModalContent = (props) => {
 
   const isSubmittingModalContent = <p>Sending order data...</p>;
 
-  const didSubmitModalContent = <p>Order Sent</p>;
+  const didSubmitModalContent = <p>Order Successfully Placed</p>;
 
   return (
     <Modal onClose={props.onClose}>

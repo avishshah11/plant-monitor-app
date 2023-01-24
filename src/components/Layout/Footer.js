@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
           <div className={classes.col}>
             <h1>Address</h1>
-            <p>XYZ, gachiboli, laiboi drtofilis, 123456</p>
+            <p>Vit Bhopal, Sehore, M.P, 123456</p>
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ const PlantsList = (props) => {
   return (
     <Fragment>
       <ul className={classes["plants-list"]}>
-        {props.plants.slice(40, 50).map((plant) => (
+        {props.plants.slice(40, 60).map((plant) => (
           <Plants
             key={plant.id}
             img={plant.img}
