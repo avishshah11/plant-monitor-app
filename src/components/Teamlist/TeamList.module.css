@@ -1,6 +1,42 @@
-.progress {
+.title_bar {
     text-align: center;
-    font-size: 2rem;
-    font-style: italic;
-    padding: 10rem;
-}
+    color: #000;
+    padding-top: 8rem;
+  }
+  
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem;
+    padding: 50px;
+  }
+  
+  .text {
+    text-align: center;
+    padding: 10px;
+    font-size: 1.5rem;
+    padding-right: 2rem;
+  }
+  
+  .img1 {
+    box-shadow: 0 0 0 0;
+    border-radius: 20px;
+    height: 300px;
+    width: 50%;
+    margin-left: 10rem;
+    transition: transform 0.2s;
+  }
+  
+  .img2{
+    box-shadow: 0 0 0 0;
+    border-radius: 20px;
+    height: 300px;
+    width: 50%;
+    margin-left: 10rem;
+    transition: transform 0.2s;
+  }
+  
+  .img2:hover,
+  .img2:active {
+  transform: scale(1.1);
+  }

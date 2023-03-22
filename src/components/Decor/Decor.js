@@ -1,7 +1,6 @@
 import { useCallback, useState, useEffect, Fragment } from "react";
 import PlantsList from "../PlantsList/PlantsList";
 import classes from "./Decor.module.css";
-import background from "../../assets/background.jpg";
 
 const Decor = (props) => {
   const [plants, setPlants] = useState([]);
@@ -10,7 +9,7 @@ const Decor = (props) => {
   const fetchCrop = useCallback(async () => {
     setLoading(true);
     try {
-      const response = await fetch("https://house-plants2.p.rapidapi.com/all", {
+      const response = await fetch("https://house-plants2.p.rapidapi.com/all-lite", {
         headers: {
           "X-RapidAPI-Key":
             "1bdf5e5f66msh2b5012dbf63f687p17a786jsn4dc018b4f162",
@@ -27,12 +26,12 @@ const Decor = (props) => {
       for (const key in data) {
         loadPlants.push({
           id: key,
-          img: data[key].img,
+          img: data[key].Img,
           common: data[key]["Common name"],
-          watering: data[key].Watering,
+          climat: data[key].Climat,
           category: data[key].Categories,
-          tempmin: data[key]["Temperature min"],
-          tempmax: data[key]["Temperature max"],
+          family: data[key].Family,
+          origin: data[key].Origin,
         });
         setPlants(loadPlants);
       }
@@ -59,9 +58,6 @@ const Decor = (props) => {
 
   return (  
     <Fragment>
-      <div className={classes["main-image"]}>
-        <img src={background} alt="A plant decor" />
-      </div>
       <section className={classes.content}>{content}</section>
     </Fragment>
   );

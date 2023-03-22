@@ -19,11 +19,6 @@ const Header = () => {
                 Team
               </Link>
             </li>
-            <li>
-              <Link className={classes.active} to="/contact">
-                Contact
-              </Link>
-            </li>
           </ul>
         </nav>
       </header>

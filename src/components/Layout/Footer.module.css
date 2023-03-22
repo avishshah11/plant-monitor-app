@@ -2,7 +2,6 @@
 
 
 .footer {
-  background-color: #2a265f;
   width: 100%;
   position: relative;
   height: auto;
@@ -61,7 +60,7 @@
 }
 
 .copyright {
-  background-color: #2a265f;
+  background-color: #000000;
   color: white;
   text-align: center;
   font-size: 1.5rem;
