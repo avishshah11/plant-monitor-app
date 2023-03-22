@@ -10,6 +10,11 @@ const Header = () => {
         <nav>
           <ul>
             <li>
+              <Link className="classes.active" to="/">
+                Home
+              </Link>
+            </li>
+            <li>
               <Link className={classes.active} to="/main">
                 Decor
               </Link>

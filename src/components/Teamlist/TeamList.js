@@ -19,7 +19,7 @@ const TeamList = () => {
           </div>
         </div>
         <div>
-          <img src={utkarsh} alt="Avish profile" className={classes.img1} />
+          <img src={utkarsh} alt="Utkarsh profile" className={classes.img1} />
           <div className={classes.text}>
             19BCE10383
             <br />
@@ -27,7 +27,7 @@ const TeamList = () => {
           </div>
         </div>
         <div>
-          <img src={shivang} alt="Avish profile" className={classes.img1} />
+          <img src={shivang} alt="Shivang profile" className={classes.img1} />
           <div className={classes.text}>
             19BCE10225
             <br />
@@ -35,7 +35,7 @@ const TeamList = () => {
           </div>
         </div>
         <div>
-          <img src={priyansh} alt="Avish profile" className={classes.img1} />
+          <img src={priyansh} alt="Priyansh profile" className={classes.img1} />
           <div className={classes.text}>
             19BCE10373
             <br />

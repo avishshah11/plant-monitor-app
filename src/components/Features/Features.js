@@ -8,9 +8,9 @@ const Features = () => {
       <ul className={classes.featuresList}>
         <li>Name</li>
         <li>Category</li>
-        <li>Minimum temperature</li>
-        <li>Maximum temperature</li>
-        <li>Watering</li>
+        <li>climate</li>
+        <li>Family</li>
+        <li>Origin</li>
       </ul>
     </Fragment>
   );

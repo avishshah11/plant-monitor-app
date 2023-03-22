@@ -1,5 +1,5 @@
 import classes from "./DecorSummary.module.css";
-// import background from "../../assets/background.png";
+import background from "../../assets/background.png";
 import { Fragment} from "react";
 import Features from "../Features/Features";
 import UpcomingFeatures from "../Features/UpcomingFeatures";
@@ -12,7 +12,7 @@ const DecorSummary = () => {
   return (
     <Fragment>
       <div className={classes["main-image"]}>
-        {/* <img src={background} alt="A plant decor" /> */}
+         <img src={background} alt="A plant decor" />
       </div>
     <section className={classes.summary}>
       <h2>Plant Decor & Monitoring</h2>
