@@ -1,6 +1,7 @@
 import { useCallback, useState, useEffect, Fragment } from "react";
 import PlantsList from "../PlantsList/PlantsList";
 import classes from "./Decor.module.css";
+import loadingGif from "../../assets/preloader.gif";
 
 const Decor = (props) => {
   const [plants, setPlants] = useState([]);
@@ -53,7 +54,9 @@ const Decor = (props) => {
   }
 
   if (loading) {
-    content = <p className={classes.data}>Loading...</p>;
+    content = <p className={classes.data}>
+      <img src={loadingGif} alt="spinner"/>
+    </p>;
   }
 
   return (  
