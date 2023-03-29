@@ -9,6 +9,9 @@ const TeamList = () => {
   return (
     <Fragment>
       <h1 className={classes.title_bar}>Our Team</h1>
+      <div className={classes.text}>
+          Guide: Mr.Nilesh Kunhare
+        </div>
       <div className={classes.card}>
         <div>
           <img src={avish} alt="Avish profile" className={classes.img1} />

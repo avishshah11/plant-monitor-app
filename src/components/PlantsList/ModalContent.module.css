@@ -41,7 +41,7 @@
 
 .actions button {
   cursor: pointer;
-  background-color: #2a265f;
+  background-color: #e4a78c;
   border: 0px solid white;
   padding: 0.5rem 2rem;
   border-radius: 25px;
@@ -50,7 +50,7 @@
 
 .actions button:hover,
 .actions button:active {
-  background-color: #9790f2;
+  background-color: #c86d4a;
   border-color: #383838;
   color: white;
 }
@@ -60,6 +60,6 @@
 }
 
 .actions .button {
-  background-color: #9790f2;
+  background-color: #c86d4a;
   color: white;
 }
